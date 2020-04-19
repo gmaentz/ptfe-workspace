@@ -18,7 +18,8 @@ resource "random_id" "environment_name" {
 }
 
 module "vpc" {
-  source             = "terraform-aws-modules/vpc/aws"
+  source             = "tfe.couchtocloud.com/tfe-ghm-tfe-org/vpc/aws"
+  version            = "2.3.4"
   name               = random_id.environment_name.hex
   cidr               = "10.10.0.0/16"
   azs                = var.azs
