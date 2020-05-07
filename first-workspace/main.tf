@@ -1,6 +1,6 @@
 variable "name_count" {
   description = "The number of names to produce."
-  default     = 8
+  default     = 3
 }
 
 variable "name_prefix" {
